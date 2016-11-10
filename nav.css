@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.responsive-nav {
+  position: relative;
+  max-width: 20em;
+  overflow: hidden;
+}
+@media (min-width: 767px) {
+  .responsive-nav {
+    max-width: 100%;
+  }
+}
+
+.responsive-nav--open {
+    overflow: visible;
+}
+
+.responsive-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(64,64,64,.9);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .js .responsive-nav__list {
+    position: absolute;
+  }
+}
+@media (min-width: 767px) {
+  .responsive-nav__list {
+    background: none;
+  }
+}
+
+.responsive-nav__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 767px) {
+  .responsive-nav__item {
+    display: inline-block;
+    border-top: none;
+  }
+}
+
+.responsive-nav__link, .responsive-nav__toggle {
+  color: #fff;
+  display: block;
+  white-space: nowrap;
+  padding-right: 14px;
+  padding-left: 14px;
+  line-height: 44px;
+}
+
+.responsive-nav__link {
+}
+@media (min-width: 767px) {
+  .responsive-nav__link {
+    color: #f43059;
+  }
+}
+
+.responsive-nav__toggle {
+  display: inline-block;
+  min-width: 44px;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.responsive-nav__toggle:before {
+  content: "☰";
+  font-size: 24px;
+  line-height: 1;
+  color: #333333
+}
+.responsive-nav__toggle:hover {
+  text-decoration: none;
+}
+.responsive-nav--open .responsive-nav__toggle {
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.responsive-nav--open .responsive-nav__toggle:before {
+  content: "✕";
+}
+@media (min-width: 767px) {
+  .responsive-nav__toggle {
+    display: none;
+  }
+}

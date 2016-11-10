@@ -1,0 +1,546 @@
+@charset "utf-8";
+/* CSS Document */
+/* Milan Petrovic */
+
+*, body {
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 1em 0 .5em
+}
+h2 {
+	font-size: 1.6em;
+	margin: 1em 0 .5em
+}
+h3 {
+	font-size: 1.2em;
+	margin: 1em 0 .5em
+}
+h4 {
+	font-size: 2em;
+	margin: 1em 0 .5em
+}
+
+.no-mar {
+	margin: 0;
+}
+.no-mar-btm {
+	margin-bottom: 0;
+}
+.no-mar-top {
+	margin-top: 0;
+}
+
+a:hover, a:active {
+	color: #F4BF31;
+}
+
+
+
+/* clear fix */
+	
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+} 
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+.fixed {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+
+small {
+	display: block
+}
+
+
+.center {
+	text-align: center;
+}
+
+
+.show-more {
+    display: none;
+}
+.show-more a {
+	text-decoration: none;
+	font-size: 19px;
+}
+
+
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+
+
+
+
+
+
+/*============== #top ===============*/
+#main-nav {
+    padding: 20px 0;
+    position: relative;
+}
+#main-nav #logo {
+    float: left;
+    padding: 4px 0 3px;
+}
+#main-nav nav {
+	float: right;
+}
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    z-index: 9;
+}
+#main-nav li {
+	float: left;
+	list-style: none
+}
+#main-nav li a {
+	text-decoration: none;
+	padding:10px 20px;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #333333;
+	letter-spacing: 4px;
+}
+#main-nav li a:link { color: #333 }
+#main-nav li a:visited { color: #333 }
+#main-nav li a:hover { color: #F4BF31 }
+#main-nav li a:active { color: #333 }
+
+
+
+#top {
+    background: rgba(0, 0, 0, 0) url("images/diwanee-cover.png") no-repeat scroll center center / cover ;
+    min-height: 790px;
+    overflow: hidden;
+}
+#top h1 {
+    font-weight: 600;
+    padding: 10% 0 2%;
+    text-align: center;
+	font-size: 120px;
+	color: #333;
+	margin-bottom: 4%;
+	letter-spacing: 1px;
+	position: relative;
+}
+.btm-bor {
+	position: relative;
+}
+.btm-bor:after {
+    border-bottom: 3px solid #C41230;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 60px;
+}
+#top h2 {
+	font-size: 30px;
+	text-align: center;
+	color: #333;
+	font-weight: 400;
+	padding: 0 7%;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+
+
+
+
+
+
+/*============== #services ===============*/
+#services > div {
+    background-color: #fbfbfb;
+    float: left;
+    text-align: center;
+	transition: 200ms ease-in-out background-color;
+}
+#services a {
+	display: block;
+    padding: 14% 10%;
+	text-decoration: none;
+}
+#services h3 {
+    color: #333333;
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    padding: 6px 6px 20px;
+    position: relative;
+}
+#services h3:after {
+    border-bottom: 2px solid #cbcbcb;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 60px;
+}
+#services div p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+#services div:first-child {
+    background: #fbfbfb url("images/triangle-white.png") no-repeat scroll left -200px center / 60% auto ;
+}
+#services div:last-child {
+    background: #fbfbfb url("images/square-white.png") no-repeat scroll right -270px center / contain ;
+}
+#services > div:hover {
+	background-color: #ededed
+}
+
+
+
+
+/*============== #jobs ===============*/
+section .fixed {
+    padding: 0 8%;
+}
+#jobs {
+    padding: 40px 0;
+}
+#jobs h2, #about h2 {
+	font-size: 60px;
+	color: #333;
+	letter-spacing: 3px;
+	line-height: 75px;
+	font-weight: 600;
+	padding-bottom: 40px;
+}
+#jobs h2.btm-bor small, #about h2.btm-bor small {
+    color: #cdcdcd;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 10px;
+    margin-bottom: -60px;
+}
+#jobs .p1 {
+    color: #333333;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 160px;
+    margin-top: 60px;
+}
+
+.cols {
+	float: left;
+}
+.job .col-10 {
+    padding-right: 3%;
+}
+.job {
+    padding: 80px 0 100px;
+}
+.job h3 {
+    color: #333333;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2.33px;
+    line-height: 36px;
+    margin-top: 14px;
+}
+.job .text-container .text-content {
+	font-size: 24px;
+	color: #888;
+	line-height: 34px;
+}
+.job a.btn {
+    border: 1px solid #979797;
+    color: #333;
+    display: block;
+    font-size: 18px;
+	text-align: center;
+    letter-spacing: 2px;
+    line-height: 23px;
+    margin: 44% 4%;
+    padding: 6px 9px;
+    text-decoration: none;
+}
+.job span {
+    border: 1px solid #dcdcdc;
+    color: #c41230;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 24px 4px 8px 0;
+    padding: 6px 12px;
+}
+
+.job-bk {
+    background: #333333 none repeat scroll 0 0;
+}
+.job-bk h3, .job-bk p {
+	color: #FFFFFF
+}
+.job-bk span {
+	color: rgba(255,255,255,.5)
+}
+.job-bk a.btn {
+	color: #FFFFFF
+}
+
+
+
+
+
+
+/*============== #jobs ===============*/
+#about {
+	background: #F5F5F5;
+	padding: 30px 0 60px;
+}
+#about .p2 {
+	color: #838383;
+    font-size: 23px;
+    line-height: 40px;
+    margin-top: 60px;
+	text-align: left
+}
+
+
+
+
+
+/*============== footer ===============*/
+footer {
+	background: #333333
+}
+footer .fixed div {
+    float: left;
+    padding: 2% 4%;
+}
+footer img {
+    vertical-align: text-bottom;
+	margin-right: 5px
+}
+footer h3 {
+	color: #fff;
+	color: f5f5f5;
+}
+footer p {
+	color: #CCCCCC;
+	font-weight: 300;
+	line-height: 20px
+}
+
+
+
+
+
+
+.short-text {
+    overflow: hidden;
+    height: 1.3em;
+}
+
+.full-text{
+    height: auto;
+}
+
+
+
+
+
+@media only screen and (min-width: 994px) and (max-width: 1199px) {
+	.fixed {
+		width: 960px;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	.fixed {
+		width: 720px;
+	}
+	.job a.btn {
+		font-size: 14px;
+	}
+	
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+	.fixed {
+		width: 560px;
+	}
+	.show-more {
+		display: block;
+	}
+	.col-2, .col-4, .col-10 {
+		width: 100%;
+	}
+	.job span {
+		margin: 3px 4px 3px 0;
+	}
+	.job a.btn {
+		margin: 4% 0;
+		text-align: center;
+	}
+	#main-nav li {
+		float: none;
+	}
+	#main-nav li a {
+		text-align: center;
+	}
+	.js .responsive-nav__list {
+		transform: translateX(-320px);
+		width: 364px !important;
+	}
+	#main-nav li a:link { color: #fff; }
+	#main-nav li a:visited { color: #fff; }
+	#main-nav li a:hover { color: #f4bf31; }
+	#main-nav li a:active { color: #fff; }
+	
+}
+
+
+@media only screen and (max-width: 499px) {
+	.fixed, section .fixed {
+		width: 96%;
+		padding: 0 2%;
+	}
+	.show-more a, .show-more {
+		display: block !important;
+		color: #BD090C
+	}
+	.col-2, .col-4, .col-10 {
+		width: 100%;
+	}
+	.responsive-nav--open {
+	    min-height: 220px;
+	}
+	#top {
+		min-height: 600px;
+	}
+	#top h1 {
+		font-size: 30px;
+	}
+	#top h2 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	#services h3 {
+		font-size: 12px;
+	}
+	#services div p {
+		font-size: 9px;
+	}
+	#jobs .p1 {
+		font-size: 26px;
+		line-height: 1.4;
+    margin-bottom: 60px;
+	}
+	.job {
+		padding: 30px 0;
+	}
+	.job .text-container .text-content {
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.job span {
+		font-size: 13px;
+		margin: 24px 4px 8px 0;
+		padding: 6px 4px;
+	}
+	.job h3 {
+		font-size: 21px;
+	}
+	.job span {
+		margin: 3px 4px 3px 0;
+	}
+	.job a.btn {
+		margin: 4% 0;
+		text-align: center;
+	}
+	#main-nav li {
+		float: none;
+	}
+	#main-nav li a {
+		text-align: center;
+	}
+	.js .responsive-nav__list {
+		transform: translateX(-320px);
+		width: 364px !important;
+	}
+	#main-nav li a:link { color: #fff; }
+	#main-nav li a:visited { color: #fff; }
+	#main-nav li a:hover { color: #f4bf31; }
+	#main-nav li a:active { color: #fff; }	
+	
+	footer .fixed div {
+		padding: 2% 8%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
